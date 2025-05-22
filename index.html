@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spin Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1d4350, #a43931);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .ad {
+      width: 468px;
+      height: 60px;
+      background: #ffffff20;
+      margin: 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #eee;
+      font-size: 14px;
+      border: 1px dashed #ffffff50;
+      border-radius: 8px;
+    }
+    .panel {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+    }
+    .number-display {
+      font-size: 48px;
+      letter-spacing: 15px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+    }
+    .digit {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .digit.visible {
+      opacity: 1;
+    }
+    #qrcode {
+      margin: 20px auto;
+    }
+    button {
+      padding: 12px 35px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    @media (max-width: 500px) {
+      .ad { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad">
+    <script type="text/javascript">
+      atOptions = {
+        'key': '3da266a40a9839ec4999a3f882938789',
+        'format': 'iframe',
+        'height': 60,
+        'width': 468,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/3da266a40a9839ec4999a3f882938789/invoke.js"></script>
+  </div>
+
+  <div class="panel">
+    <div class="number-display" id="number">
+      <span class="digit" id="d0">-</span>
+      <span class="digit" id="d1">-</span>
+      <span class="digit" id="d2">-</span>
+      <span class="digit" id="d3">-</span>
+    </div>
+
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '3da266a40a9839ec4999a3f882938789',
+          'format': 'iframe',
+          'height': 60,
+          'width': 468,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/3da266a40a9839ec4999a3f882938789/invoke.js"></script>
+    </div>
+
+    <div id="qrcode"></div>
+
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '3da266a40a9839ec4999a3f882938789',
+          'format': 'iframe',
+          'height': 60,
+          'width': 468,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/3da266a40a9839ec4999a3f882938789/invoke.js"></script>
+    </div>
+
+    <button id="startBtn" onclick="handleClick()">Start</button>
+
+    <div class="ad">
+      <script type="text/javascript">
+        atOptions = {
+          'key': '3da266a40a9839ec4999a3f882938789',
+          'format': 'iframe',
+          'height': 60,
+          'width': 468,
+          'params': {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/3da266a40a9839ec4999a3f882938789/invoke.js"></script>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
